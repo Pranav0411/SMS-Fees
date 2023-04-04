@@ -10,13 +10,22 @@ import jakarta.persistence.Id;
 @Entity
 public class Fees {
 	
-	@Id
+	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
 	private String name;
 	
-	
+	@Id
+	private String studenEmail;
+
+	public String getStudenEmail() {
+		return studenEmail;
+	}
+
+	public void setStudenEmail(String studenEmail) {
+		this.studenEmail = studenEmail;
+	}
 
 	private String amount ;
 	

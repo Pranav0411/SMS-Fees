@@ -47,6 +47,7 @@ public class ServiceImpl implements Services {
 		Fees f = new Fees();
 		f.setId(dt.getId());
 		f.setName(dt.getName());
+		f.setStudenEmail(dt.getStudenEmail());
 		f.setAmount(dt.getAmount());
 		f.setPaymentid(dt.getPaymentid());
 		f.setFeestype(dt.getFeestype());
@@ -59,6 +60,7 @@ public class ServiceImpl implements Services {
 		DataTransfer dt = new DataTransfer();
 		dt.setId(f.getId());
 		dt.setName(f.getName());
+		dt.setStudenEmail(f.getStudenEmail());
 		dt.setAmount(f.getAmount());
 		dt.setPaymentid(f.getPaymentid());
 		dt.setFeestype(f.getFeestype());

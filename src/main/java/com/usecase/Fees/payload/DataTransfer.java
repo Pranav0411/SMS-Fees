@@ -13,7 +13,15 @@ public class DataTransfer {
 	public void setName(String name) {
 		this.name = name;
 	}
+	private String studenEmail;
+	
+	public String getStudenEmail() {
+		return studenEmail;
+	}
 
+	public void setStudenEmail(String studenEmail) {
+		this.studenEmail = studenEmail;
+	}
 	private String amount ;
 	
 	private String paymentid;
